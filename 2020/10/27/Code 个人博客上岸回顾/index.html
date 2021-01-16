@@ -28,7 +28,7 @@
 <meta property="og:description" content="对搭建博客的过程的一个复习、深入了解和小白教程。">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2020-10-26T16:37:19.000Z">
-<meta property="article:modified_time" content="2021-01-15T07:21:44.677Z">
+<meta property="article:modified_time" content="2021-01-16T05:21:10.493Z">
 <meta property="article:author" content="LeeKa">
 <meta property="article:tag" content="Code">
 <meta property="article:tag" content="静态博客教程">
@@ -197,7 +197,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-01-15 15:21:44" itemprop="dateModified" datetime="2021-01-15T15:21:44+08:00">2021-01-15</time>
+                <time title="修改时间：2021-01-16 13:21:10" itemprop="dateModified" datetime="2021-01-16T13:21:10+08:00">2021-01-16</time>
               </span>
 
           
@@ -240,14 +240,18 @@
 <p>然后，点选 Repository 边的 New 新建一个库。记住 <strong>repository name 只能填写为 “ GitHub 用户名.github.io”</strong> 的形式。</p>
 <p>安装 Git 部署插件：回到 Git Bash 界面，在博客目录下输入<code>cnmp install --save hexo-deployer-git</code>安装 Git 部署插件以把博客部署到 Github 上（ 注意 Git 和 GitHub 不是一回事 ）。</p>
 <p>修改配置文件：在博客目录下找到 _config.yml 用编辑器打开（记事本也行，我选用的是） 。滑到最低端找到 deploy 。把 type 后面引号中写入 git 。然后换行写上：<code>repo： ……</code>省略号指我们在 GitHub 建立的库的网址。再换行写上<code>branch: master</code> 。</p>
-<p>部署：用<code>hexo g</code>来生成（generate）HTML网页文件，键入<code>git config --global user.email &quot;xxx&quot;</code>和<code>git config --global user.name &quot;xxx&quot;</code>配置 GitＨub 账号的邮件地址和用户名（替换 xxx ）。然后键入<code> hexo d</code> 来部署（deploy）到远端。第一次部署应当会出现弹出窗口要求输入密码。总之，一步一步按要求键入即可。</p>
-<p>然后，打开浏览器，网址栏输入建立库的地址．就能看到个人博客了．All Done !</p>
-<h3 id="曾经觉得还会有的内容："><a href="#曾经觉得还会有的内容：" class="headerlink" title="曾经觉得还会有的内容："></a><del>曾经觉得还会有的内容：</del></h3><p><del>给这篇博文查缺补漏，添加图片、如何推一篇博文到博客上、如何换博客主题、整合补充用到的命令行指令、把个人网站解析到个人博客上，原理问题（为什么要下这么多东西啊？！） 有的内容可能会写在新的博文里面。</del></p>
+<p>部署：用<code>hexo g</code>来生成（generate）HTML网页文件，键入<code>git config --global user.email &quot;xxx&quot;</code>和<code>git config --global user.name &quot;xxx&quot;</code>配置 GitＨub 账号的邮件地址和用户名（替换 xxx ）。然后键入<code> hexo d</code> 来部署（deploy）到远端。第一次部署应当会出现弹出窗口要求输入密码。</p>
+<p>这里需要注意！一共需要输入两次密码。第一次的时候，你应该输入你的 GitHub 账号和密码，第二次的则须如下获取。</p>
+<p>首先GitHub网页点击头像 -&gt; Settings -&gt; Developer Settings -&gt;Personal access tokens -&gt;Generate new token。创建一个新的 token ，设定其权限和名字（ 保险起见，建议给予所有权限 ），随后 GitHub 会分配给它一个 password 。这里的名字和密码才是第二次所需输入的。需要注意的是，你只有<strong>一次</strong>看到密码的机会，所以一定要保存好。以防日后用到。</p>
+<p>然后，打开浏览器，网址栏输入建立库的地址．就能看到个人博客了。All Done !</p>
+<p>P.S.  如果发现修改没有带来应有的变化，记得清除浏览器缓存。不过以上步骤应该用不到这个 P.S. 。</p>
+<h3 id="曾经觉得还会有的内容："><a href="#曾经觉得还会有的内容：" class="headerlink" title="曾经觉得还会有的内容："></a>曾经<del>觉得还会有的内容：</del></h3><p><del>给这篇博文查缺补漏，添加图片、如何推一篇博文到博客上、如何换博客主题、整合补充用到的命令行指令、把个人网站解析到个人博客上，原理问题（为什么要下这么多东西啊？！） 有的内容可能会写在新的博文里面。</del></p>
 <p><del>考虑到还要挣扎一下软件组的题目的时间问题和还不太懂的能力问题以及我懒的问题，这次还是就此暂停吧。让写博文督促我查缺补漏，深入学习！</del></p>
-<h3 id="后言"><a href="#后言" class="headerlink" title="后言"></a>后言</h3><p>本人咕咕咕的能力又一次得到了体现啊哈哈。这一切都怪学校安排的作业太多了！真的！！真是的，都和你说了是真的啊！！！（说起来上面内容已经够截下来做世界名画了吧……</p>
+<h3 id="后言"><a href="#后言" class="headerlink" title="后言"></a>后言</h3><p>本人咕咕咕的能力又一次得到了体现啊哈哈。这一切都怪学校安排的作业太多了！真的哦？真的真的！！真是的，都和你说了是真的啊！！！</p>
 <p>好吧，抛去玩笑话，其实是想把域名从腾讯云转去阿里云的时候出了岔子。必须要等注册满14天才能删号重新来过,就先放着了，结果放下后就再也没有拿起来过（捂脸）……</p>
 <p>如果你照着我的、或者别人的教程搭好了这样一个小小的静态博客。首先，相信和我 一样是充满成就感的，Hello World 两个单词仿佛是一个广阔的新世界你面前缓缓展开。其次，你也一定会注意到它是简单的，流程并不复杂，而且我们不曾敲过一行代码，那些真正麻烦的工作，hexo 给我们静静地办好了。无论如何，博客是我们的，我们可以自由的享用它了。</p>
-<p>经过（不长地）考虑，我我决定写成一个搭建博客系列教程，下一篇：如何写博客、更换主题。</p>
+<p>处于篇幅上的考虑，我最后还是决定把它写成一个搭建静态博客系列教程。做个预告吧：</p>
+<p>下一篇：如何写博客、解析到个人域名。</p>
 
     </div>
 
