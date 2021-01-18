@@ -175,11 +175,15 @@ body {
   height: 100%;
 }
 body {
-  background: var(--body-bg-color);
+  background: url("https://source.unsplash.com/random/1600x900");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
   color: var(--text-color);
   font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
   font-size: 1em;
   line-height: 2;
+  opacity: 0.9;
 }
 @media (max-width: 991px) {
   body {
@@ -1168,7 +1172,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #30ff1a;
+  background: #4a75d9;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2440,7 +2444,7 @@ ul.breadcrumb li + li:last-child {
   padding: 0;
 }
 body {
-  background: url("images/BGP.png");
+  background: url("D:UsersuftxDocumentshexoimagesBGP.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
